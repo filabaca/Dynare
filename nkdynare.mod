@@ -33,6 +33,9 @@ var e_u;
 stderr sig_u;
 end;
 
+//--------------------------
+//Estimation
+//--------------------------
 varobs y pi i;
 
 estimated_params;
