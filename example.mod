@@ -1,3 +1,4 @@
+// Preamble
 var y i k a c;
 varexo e;
 
@@ -9,6 +10,7 @@ rho = 0.95;
 sigma = 1;
 sigmae = 0.01;
 
+// Model
 model;
 
 exp(c)^(-sigma) = beta*(exp(c(+1))^(-sigma)*(alpha*exp(a(+1))*exp(k)^(alpha-1)+(1-delta)));
@@ -32,6 +34,7 @@ shocks;
 var e = sigmae^2;
 end;
 
+//Estimation
 steady;
 
 stoch_simul(hp_filter=1600,order=1,irf=40);
